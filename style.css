@@ -1,0 +1,396 @@
+body {
+    margin: 0;
+    background-image: url('fotot/prapavija1.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+hr {
+    border-color: #AFCEED;
+}
+
+a:link {
+    color: #570f2e;
+}
+a:visited {
+    color: blue;
+}
+a:hover {
+    color: yellow;
+}
+a:active {
+    color: black;
+}
+
+.bukurite {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 300px;
+    height: 200px;
+    color: #ffffff;
+}
+
+.bukurite h3 {
+    margin: 5px;
+    height: 46px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ffefc0;
+}
+
+.bukurite img {
+    float: left;
+    margin: 5px;
+    border: 1px solid #ffefc0;
+    border-radius: 15px;
+}
+
+.bukurite p {
+    margin: 5px 0;
+    padding-right: 5px;
+    font-size: 15px;
+}
+
+.bukurite a {
+    color: yellow;
+}
+
+#ofertat li {
+    width: 250px;
+    margin: 20px auto;
+}
+
+#ofertat li a img {
+    width: 250px;
+    height: 200px;
+}
+
+#header {
+    background-image: url('fotot/headerV2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1018px;
+    height: 150px;
+    margin: 0 auto;
+    border-top: 2px solid #5893D9;
+    border-left: 3px solid #5893D9;
+    border-right: 3px solid #5893D9;
+}
+
+#menu {
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #5893D9;
+}
+
+#menu table {
+    margin: 0 auto;
+}
+
+#menu td {
+    padding: 7px 0px;
+}
+
+#menu a {
+    padding: 7px 30px;
+    color: white;
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size: 24px;
+    transition: color 0.8s, text-shadow 0.3s;
+}
+
+
+
+#menu a:hover {
+    color: #4d0066;
+    text-shadow: 0px 0px 4px  #4d0066;
+}
+
+#permbajtja {
+    width: 1018px;
+    margin: 0 auto;
+    color:rgb(5, 51, 89);
+    background-color: #AFCEED;
+    border-left: 3px solid #5893D9;
+    border-right: 3px solid #5893D9;
+    font-family: tahoma, sans-serif;
+}
+
+#permbajtja  h2 {
+    font-size: 28px;
+}
+
+#permbajtja h3 {
+    font-size: 18px;
+}
+
+.floatmajtas{
+    float: left;
+    background-color: #AFCEED;
+}
+
+.floatdjathtas {
+    float: right;
+    background-image: url('fotot/prapavija3.png');
+    background-repeat: repeat-y;
+}
+
+.floatdjathtas2 {
+    float: right;
+    background-color: #424040;
+    background-repeat: no-repeat;
+}
+
+.floatmajtas2 {
+    float: left;
+    background-color: #424040;
+    background-repeat: no-repeat;
+}
+
+.artikull {
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+#footer {
+    width: 1014px;
+    margin: 0 auto;
+    clear: both;
+    padding: 5px;
+    color: white;
+    background-color: #5893D9;
+}
+
+#footer table {
+    width: inherit;
+}
+
+#footer a  {
+    color: white;
+}
+
+#footer a:hover {
+    color:yellow;
+}
+#footer a:active {
+    color: black;
+}
+#footer a:visited {
+    color: gray;
+}
+
+#menu ul {
+    padding: 0px;
+    margin: 0px;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+}
+
+#menu ul li {
+    display: block;
+    position: relative;
+    float: left;
+    border:1px solid #000
+}
+
+#menu li ul {
+    display: none;
+}
+
+#menu ul li a {
+    display: block;
+    background: #C7DAEB;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff;
+}
+#menu ul li a:hover {
+    background: #5893D9;
+}
+
+#menu li:hover ul {
+    display: block;
+    position: absolute;
+    width: 150px;
+    margin: auto;
+}
+
+#menu li:hover li {
+    float: none;
+}
+#menu li:hover a {
+    background: #9AC5FA;
+}
+#menu li:hover li a:hover {
+    background: #C7DAEB;
+}
+
+#menu li {
+    list-style-type: none;
+}
+
+#backgroundQytetet
+{
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-origin:padding-box;
+}
+
+#thenia
+{
+    border: 2px solid green;
+    padding: 15px;
+}
+
+#ndarjaekolonave
+{
+    -moz-column-count:2;
+    -webkit-column-count:2;
+    column-count:2;
+    -moz-column-gap:40px;
+    -webkit-column-gap:40px;
+    column-gap:40px;
+    -moz-column-rule:2px outset #33035f;
+    -webkit-column-rule:2px outset #33035f;
+    column-rule:2px outset #33035f;
+}
+
+.login
+{
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 200px;
+    padding: 50px;
+    width: 450px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 10px 10px 10px  #5252c2;
+}
+
+.regjistrohu
+{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 400px;
+    padding: 50px;
+    width: 450px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 10px 10px 10px  #5252c2;
+}
+
+#tablediv{
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-top:82px;
+    background-color:#e9eafb;
+}
+
+.btnkrijo
+{
+    background-color: #069306;
+    color: white;
+    width: 75px;
+    height:35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 7px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btnkrijo:hover
+{
+    background-color: #046204;
+    color: white;
+    width: 75px;
+    height:35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px  white;
+}
+
+.btnndrysho
+{
+    background-color: #4949f5;
+    color: white;
+    width: 70px;
+    height:25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btnndrysho:hover
+{
+    background-color: #1111a2;
+    color: white;
+    width: 70px;
+    height:25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px  white;
+}
+
+.btnfshij
+{
+    background-color: #ff1a1f;
+    color: white;
+    width: 70px;
+    height:25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btnfshij:hover
+{
+    background-color: #b30003;
+    color: white;
+    width: 70px;
+    height:25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px  white;
+}
+
+.inputi
+{
+    color: rgb(5, 51, 89);
+    height:25px;
+    font-size:16px;
+    border-radius: 2px;
+    border: 1px solid rgba(5,51,89,0.6);
+    font-family: 'Exo', sans-serif;
+    font-weight: 400;
+    padding: 4px;
+}
