@@ -1,16 +1,4 @@
 <html>
-<?php
-
-if(isset($_COOKIE['username'])and $_COOKIE['roli']=='1')
-{
-    header("Location:indexSH.php") ;
-}
-else if(isset($_COOKIE['username'])and $_COOKIE['roli']=='2')
-{
-    header("Location:indexA.php") ;
-}
-?>
-
 <head>
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -32,32 +20,31 @@ else if(isset($_COOKIE['username'])and $_COOKIE['roli']=='2')
     </style>
 </head>
 <body>
-
 <header id="header"></header>
 <div id="menu">
     <table>
         <tr>
             <td>
-                <a href="index.php">Ballina</a>
+                <a href="index.php">Home</a>
             </td>
             <td>
-                <li><a href="qytetet.php">Qytetet</a>
+                <li><a href="index.php">Placeholder1</a>
                     <ul>
-                        <li><a href="qytetet.php#prishtina">Prishtina</a></li>
-                        <li><a href="qytetet.php#ferizaji">Ferizaji</a></li>
-                        <li><a href="qytetet.php#gjilani">Gjilani</a></li>
-                        <li><a href="qytetet.php#prizreni">Prizreni</a></li>
+                        <li><a href="index.php">Option1</a></li>
+                        <li><a href="index.php">Option2</a></li>
+                        <li><a href="index.php">Option3</a></li>
+                        <li><a href="index.php">Option4</a></li>
                     </ul>
                 </li>
             </td>
-            <td><a href="ngjarjet.php">Ngjarjet</a></td>
-            <td><a href="transporti.php">Transporti</a></td>
-            <td><a href="identifikimi.php">Login</a></td>
+            <td><a href="index.php">Placeholder2</a></td>
+            <td><a href="index.php">PlaceHolder3</a></td>
+            <td><a href="login.php">Login</a></td>
 
         </tr>
     </table>
 </div>
-<div id="permbajtja">
+<div id="content">
 
 
     <div style="padding: 20px 40px;">
@@ -158,7 +145,7 @@ else if(isset($_COOKIE['username'])and $_COOKIE['roli']=='2')
         </div>
     </div>
 </div>
-<div id="footer">
+<footer id="footer">
     <table>
         <tr>
             <td>
@@ -169,6 +156,6 @@ else if(isset($_COOKIE['username'])and $_COOKIE['roli']=='2')
             </td>
         </tr>
     </table>
-</div>
+</footer>
 </body>
 </html>

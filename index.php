@@ -7,39 +7,37 @@
 </head>
 <body>
 <header id="header"></header>
-<nav id="menu">
+<div id="menu">
     <table>
         <tr>
             <td>
-                <a href="index.php">Ballina</a>
+                <a href="index.php">Home</a>
             </td>
             <td>
-                <li><a href="qytetet.php">Qytetet</a>
+                <li><a href="index.php">Placeholder1</a>
                     <ul>
-                        <li><a href="qytetet.php#prishtina">Prishtina</a></li>
-                        <li><a href="qytetet.php#ferizaji">Ferizaji</a></li>
-                        <li><a href="qytetet.php#gjilani">Gjilani</a></li>
-                        <li><a href="qytetet.php#prizreni">Prizreni</a></li>
+                        <li><a href="index.php">Option1</a></li>
+                        <li><a href="index.php">Option2</a></li>
+                        <li><a href="index.php">Option3</a></li>
+                        <li><a href="index.php">Option4</a></li>
                     </ul>
                 </li>
             </td>
-            <td><a href="ngjarjet.php">Ngjarjet</a></td>
-            <td><a href="transporti.php">Transporti</a></td>
+            <td><a href="index.php">Placeholder2</a></td>
+            <td><a href="index.php">PlaceHolder3</a></td>
             <td><a href="login.php">Login</a></td>
+
         </tr>
     </table>
-</nav>
-
-<div id="permbajtja">
-
-    <section class="floatmajtas" style="width: 658px; padding: 15px;">
-        <h2>Turizmi n&#235; Kosov&#235;</h2>
-        <p style="font-size: 20px; line-height: 1.4;">Pasurit&#235; natyrore t&#235; Kosov&#235;s paraqesin burim t&#235; kualitetit t&#235; lart&#235; p&#235;r turiz&#235;m. Kosova ka <a href="qytetet.php" target="_blank">qytete</a> mjaft te bukura ku ja vlen&#235; te shkojm&#235; . <a href="identifikimi.php" target="_blank">Rezervoni</a> bileta online !
-        </p>
+</div>
+<div id="content">
+    <section class="floatleft" style="width: 658px; padding: 15px;">
+        <h2>Welcome to iDitar-i</h2>
+        <!--<p style="font-size: 20px; line-height: 1.4;">Pasurit&#235; natyrore t&#235; Kosov&#235;s paraqesin burim t&#235; kualitetit t&#235; lart&#235; p&#235;r turiz&#235;m. Kosova ka <a href="qytetet.php" target="_blank">qytete</a> mjaft te bukura ku ja vlen&#235; te shkojm&#235; . <a href="identifikimi.php" target="_blank">Rezervoni</a> bileta online !
+        </p>-->
         <br><br>
-        <h2 id="align" ; style="border-bottom:2px dashed;text-align:center";>Kosova dhe bukurit&#235; e saj</h2><br><br>
-
-        <table cellspacing="0" cellpadding="0">
+        <h2 id="align" ; style="border-bottom:2px solid;text-align:center";>Placeholder</h2><br><br>
+        <!--<table cellspacing="0" cellpadding="0">
             <tr>
                 <td>
 
@@ -75,32 +73,23 @@
                     </article>
                 </td>
             </tr>
-        </table>
-
+        </table>-->
     </section>
-
-    <section class="floatdjathtas" style="width: 330px;  ">
-
-
-
+    <!--<section class="floatright" style="width: 330px;  ">
         <aside id="ofertat";>
             <h2 align="center" style="margin-bottom: 50px"><u>Oferta Speciale</u></h2>
-
             <ul type="none" style="padding: 0;">
                 <li style="margin-bottom: 30px;"><img src="fotot/oferta1.jpg" usemap="#rezervimi" width="250" height="200"></li>
                 <li style="margin-bottom: 30px;"><img src="fotot/oferta2.jpg" usemap="#rezervimi" width="250" height="200"></li>
                 <li style="margin-bottom: 30px;"><img src="fotot/oferta3.jpg" usemap="#rezervimi" width="250" height="200"></li>
             </ul>
-
             <map name="rezervimi">
                 <area shape="rect" coords="0,150,250,200" alt="Rezervo tani" href="identifikimi.php">
             </map>
         </aside>
-    </section>
-
-    <div style="clear: both"></div>
+    </section>-->
+    <div style="clear: both"></div> <!--Magic code don't touch!-->
 </div>
-
 <footer id="footer">
     <table>
         <tr>

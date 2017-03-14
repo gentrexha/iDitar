@@ -108,7 +108,7 @@ a:active {
     text-shadow: 0px 0px 4px  #4d0066;
 }
 
-#permbajtja {
+#content {
     width: 1018px;
     margin: 0 auto;
     color:rgb(5, 51, 89);
@@ -118,20 +118,20 @@ a:active {
     font-family: tahoma, sans-serif;
 }
 
-#permbajtja  h2 {
+#content  h2 {
     font-size: 28px;
 }
 
-#permbajtja h3 {
+#content h3 {
     font-size: 18px;
 }
 
-.floatmajtas{
+.floatleft{
     float: left;
     background-color: #AFCEED;
 }
 
-.floatdjathtas {
+.floatright {
     float: right;
     background-image: url('fotot/prapavija3.png');
     background-repeat: repeat-y;
