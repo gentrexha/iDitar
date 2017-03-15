@@ -14,7 +14,7 @@
                 <a href="index.php">Home</a>
             </td>
             <td>
-                <li><a href="index.php">Placeholder1</a>
+                <li><a href="index.php">Placeholder nga Princie</a>
                     <ul>
                         <li><a href="index.php">Option1</a></li>
                         <li><a href="index.php">Option2</a></li>
