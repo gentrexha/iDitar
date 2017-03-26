@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html>
+<script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBKG2qsUfB7ijwJxO6DkKTW44oI9clzeRw",
+        authDomain: "iditar-83ac9.firebaseapp.com",
+        databaseURL: "https://iditar-83ac9.firebaseio.com",
+        storageBucket: "iditar-83ac9.appspot.com",
+        messagingSenderId: "211947829037"
+    };
+    firebase.initializeApp(config);
+</script>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="images/icon.ico" />
@@ -14,7 +26,7 @@
                 <a href="index.php">Home</a>
             </td>
             <td>
-                <li><a href="index.php">Placeholder1</a>
+                <li><a href="camera.html">Camera</a>
                     <ul>
                         <li><a href="index.php">Option1</a></li>
                         <li><a href="index.php">Option2</a></li>
