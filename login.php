@@ -32,7 +32,7 @@
 
       <div class="container">
 
-        <form class="form-signin">
+        <form class="form-signin" method="POST" action="login.php">
           <div class="panel periodic-login">
               <span class="atomic-number">28</span>
               <div class="panel-body text-center">
@@ -42,27 +42,22 @@
 
                   <i class="icons icon-arrow-down"></i>
                   <div class="form-group form-animate-text" style="margin-top:40px !important;">
-                    <input type="text" class="form-text" required>
+                    <input type="text" class="form-text" name="username" id="username" required>
                     <span class="bar"></span>
                     <label>Username</label>
                   </div>
                   <div class="form-group form-animate-text" style="margin-top:40px !important;">
-                    <input type="text" class="form-text" required>
-                    <span class="bar"></span>
-                    <label>Email</label>
-                  </div>
-                  <div class="form-group form-animate-text" style="margin-top:40px !important;">
-                    <input type="password" class="form-text" required>
+                    <input type="password" class="form-text" name="password" id="password" required>
                     <span class="bar"></span>
                     <label>Password</label>
                   </div>
                   <label class="pull-left">
-                  <input type="checkbox" class="icheck pull-left" name="checkbox1"/> &nbsp Agree the terms and policy
+                  <input type="checkbox" class="icheck pull-left" name="remember" id="remember"/> Remember me
                   </label>
-                  <input type="submit" class="btn col-md-12" value="SignUp"/>
+                  <input type="submit" class="btn col-md-12" name="signin" id="signin" value="SignIn"/>
               </div>
                 <div class="text-center" style="padding:5px;">
-                    <a href="login.html">Already have an account?</a>
+                    <a href="reg.php"><u>Signup</u></a>
                 </div>
           </div>
         </form>
@@ -91,3 +86,68 @@
      <!-- end: Javascript -->
    </body>
    </html>
+   
+   
+   <?php
+
+   session_start();
+   require 'connection.php';
+
+
+   if(isset($_COOKIE['username']))
+   {
+       header("Location:index.html") ;
+   }
+
+   if(isset($_POST['signin'])) {
+       if (!$dbConn) {
+           die('Could not connect: ' . mysqli_connect_error());
+       }
+       else
+       {
+
+
+           $usernameunsafe = $_POST['username'];
+           $username = mysqli_real_escape_string($dbConn, $usernameunsafe);
+           $passwordpahashunsafe = $_POST['password'];
+           $passwordpahash = mysqli_real_escape_string($dbConn, $passwordpahashunsafe);
+           $hash = hash('sha256', $passwordpahash);
+           $salt = "";
+
+
+
+
+           $querySalt = "select salt from users where user='$username'";
+           $dbReplyNoHash = mysqli_query($dbConn, $querySalt);
+           if (mysqli_num_rows($dbReplyNoHash) > 0) {
+               while ($row = mysqli_fetch_assoc($dbReplyNoHash)) {
+                   $salt = $row["salt"];
+               }
+           }
+           $password = hash('sha256', $salt . $hash);
+           echo $password;
+
+           $queryPwd = 'select * from users where User="' . $username . '" and SaltedHashPwd="' . $password . '"';
+           $dbReplyHash = mysqli_query($dbConn, $queryPwd);
+           if (mysqli_num_rows($dbReplyHash) > 0) {
+               $_SESSION['username'] = $username;
+               if(isset($_POST['remember']))
+               {
+                   setcookie('username',$usernameunsafe,time()+40);
+                   setcookie('password',$passwordpahashunsafe,time()+40);
+               }
+               header('Location:index.html');
+           } else {
+               echo "Wrong username or password!";
+           }
+
+
+       }
+   }
+
+
+
+
+
+
+   ?>
