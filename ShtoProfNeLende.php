@@ -48,8 +48,8 @@
                     $sqlQuery = "select lid,emri from lendet";
                     $dbResponse = mysqli_query($dbConn , $sqlQuery);
 
-                    echo "<select type='text' class='form-text' name='lid' id='lid' >";
-                    echo "<option value='NULL' style='display:none'><span class='bar'></span><label>Lënda</label></option>";
+                    echo "<select type='text' class='form-text' name='lid' id='lid' required>";
+                    echo "<option value='' style='display:none'><span class='bar'></span><label>Lënda</label></option>";
                     while($row = mysqli_fetch_assoc($dbResponse)) {
                         echo "<option style='color:black' value='".$row["lid"]."'>".$row["emri"]."</option>";
                     }
@@ -65,8 +65,8 @@
                     $sqlQuery = "select uid,concat(emri,' ',mbiemri) emri from users";
                     $dbResponse = mysqli_query($dbConn , $sqlQuery);
 
-                    echo "<select type='text' class='form-text' name='uid' id='uid' >";
-                    echo "<option value='NULL' style='display:none'><span class='bar'></span><label>Profesori</label></option>";
+                    echo "<select type='text' class='form-text' name='uid' id='uid' required>";
+                    echo "<option value='' style='display:none'><span class='bar'></span><label>Profesori</label></option>";
                     while($row = mysqli_fetch_assoc($dbResponse)) {
                         echo "<option style='color:black' value='".$row["uid"]."'>".$row["emri"]."</option>";
                     }
