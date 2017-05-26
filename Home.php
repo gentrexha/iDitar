@@ -58,7 +58,14 @@
             var options = {
                 title: 'Notat mesatare sipas klaseve',
                 width: 500,
-                height: 255
+                height: 332,
+                vAxis: {
+                    viewWindowMode:'explicit',
+                    viewWindow: {
+                        max:5,
+                        min:0
+                    }
+                },
 
             };
 
@@ -69,6 +76,58 @@
         }
 
 </script>
+
+
+    <script type="text/javascript">
+
+
+        function verifyorder() {
+            var order = document.getElementById('value').value;
+
+            var emripartise = order;
+            var jsonData = $.ajax({
+                url: "getDataNotatNxensive.php?t=".concat(emripartise),
+                dataType: "json",
+                async: false
+            }).responseText;
+
+            var myArr = JSON.parse(jsonData);
+
+
+            google.charts.load('current', {packages: ['corechart', 'bar']});
+            google.charts.setOnLoadCallback(drawBasic);
+
+            function drawBasic() {
+
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'Emri');
+                data.addColumn('number', 'Nota Mesatare');
+                for (var i = 0; i < myArr.length; i++) {
+
+                    data.addRows([[myArr[i]['emri'], parseFloat(myArr[i]['mesatarja'])]]);
+                }
+
+                var options = {
+                    title: 'Notat mesatare sipas nxensive',
+                    width: 500,
+                    height: 300,
+                    vAxis: {
+                    viewWindowMode:'explicit',
+                        viewWindow: {
+                        max:5,
+                            min:0
+                    }
+                },
+
+                };
+
+                var chart = new google.visualization.ColumnChart(
+                    document.getElementById('notatnxensit'));
+
+                chart.draw(data, options);
+            }
+        }
+    </script>
 
 
   </head>
@@ -503,20 +562,7 @@
                               <div id="notat">
 
                               </div>
-                              <div class="col-md-12" style="padding-top:20px;">
-                                  <div class="col-md-4 col-sm-4 col-xs-6 text-center">
-                                      <h2 style="line-height:.4;">$100.21</h2>
-                                      <small>Total Laba</small>
-                                  </div>
-                                  <div class="col-md-4 col-sm-4 col-xs-6 text-center">
-                                      <h2 style="line-height:.4;">2000</h2>
-                                      <small>Total Barang</small>
-                                  </div>
-                                  <div class="col-md-4 col-sm-4 col-xs-12 text-center">
-                                      <h2 style="line-height:.4;">$291.1</h2>
-                                      <small>Total Pengeluaran</small>
-                                  </div>
-                              </div>
+
                           </div>
                         </div>
                     </div>
@@ -535,23 +581,30 @@
                             </div>
                           </div>
                           <div class="panel-body" style="padding-bottom:50px;">
-                              <div id="canvas-holder1">
-                                <canvas class="bar-chart"></canvas>
+                              <div>
+                                <!-- Insertimi ne option list i klaseve nga databaza -->
+                                  <?php
+
+                                  require 'connection.php';
+                                  $sqlQuery = "select distinct klasa from ditari d, studentet s where s.sid=d.sid order by klasa";
+                                  $dbResponse = mysqli_query($dbConn , $sqlQuery);
+
+                                  echo "<select id='value' name='value'>";
+                                  while($row = mysqli_fetch_assoc($dbResponse)) {
+                                      echo "<option value='".$row["klasa"]."'>".$row["klasa"]."</option>";
+                                  }
+                                  echo "</select>"
+                                  ?>
+
+
+
+
+                                  <input type="button" value="Shiko" onclick="verifyorder();" />
+
                               </div>
-                              <div class="col-md-12 padding-0" >
-                                <div class="col-md-4 col-sm-4 hidden-xs" style="padding-top:20px;">
-                                  <canvas class="doughnut-chart2"></canvas>
-                                </div>
-                                <div class="col-md-8 col-sm-8 col-xs-12">
-                                    <h4>Progress Produksi barang</h4>
-                                    <p>Sed hendrerit. Curabitur blandit mollis lacus. Duis leo. Sed libero.fusce commodo aliquam arcu..</p>
-                                    <div class="progress progress-mini">
-                                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                                        <span class="sr-only">60% Complete</span>
-                                      </div>
-                                    </div>
-                                </div>
-                              </div>
+                          <div id="notatnxensit">
+
+                          </div>
                           </div>
                         </div>
                     </div>

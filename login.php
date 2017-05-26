@@ -125,7 +125,6 @@
                }
            }
            $password = hash('sha256', $salt . $hash);
-           echo $password;
 
            $queryPwd = 'select * from users where User="' . $username . '" and SaltedHashPwd="' . $password . '"';
            $dbReplyHash = mysqli_query($dbConn, $queryPwd);
@@ -136,7 +135,7 @@
                    setcookie('username',$usernameunsafe,time()+40);
                    setcookie('password',$passwordpahashunsafe,time()+40);
                }
-               header('Location:index.html');
+               header('Location:Home.php');
            } else {
                echo "Wrong username or password!";
            }
