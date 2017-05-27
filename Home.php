@@ -127,7 +127,27 @@
                 chart.draw(data, options);
             }
         }
+		
     </script>
+	
+	
+	<script type="text/javascript">
+var x = document.getElementById("genti");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+	console.log("Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude);
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
 
 
   </head>
@@ -322,7 +342,9 @@
                   <div class="panel-body">
                       <div class="col-md-6 col-sm-12">
                         <h3 class="animated fadeInLeft">Customer Service</h3>
-                        <p class="animated fadeInDown"><span class="fa  fa-map-marker"></span> Batavia,Indonesia</p>
+						<button onclick="getLocation()">Merre lokacionin</button>
+						
+                        <p  id="Location">Lokacioni</p>
 
                         <ul class="nav navbar-nav">
                             <li><a href="" >Impedit</a></li>
@@ -333,8 +355,8 @@
                         </ul>
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <div class="col-md-6 col-sm-6 text-right" style="padding-left:10px;">
-                          <h3 style="color:#DDDDDE;"><span class="fa  fa-map-marker"></span> Banyumas</h3>
+                        <div class="col-md-6 col-sm-6 text-right" id="Location1" style="padding-left:10px;">
+                          <h3 id="genti" style="color:#DDDDDE;"><span class="fa  fa-map-marker"></span> Banyumas</h3>
                           <h1 style="margin-top: -10px;color: #ddd;">30<sup>o</sup></h1>
                         </div>
                         <div class="col-md-6 col-sm-6">
