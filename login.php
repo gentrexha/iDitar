@@ -93,7 +93,7 @@
 
    session_start();
    require 'connection.php';
-   echo $_SESSION['username'];
+   //echo $_SESSION['username'];
 
 
    if(isset($_COOKIE['username']))

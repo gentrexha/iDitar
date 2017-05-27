@@ -129,25 +129,7 @@
         }
 		
     </script>
-	
-	
-	<script type="text/javascript">
-var x = document.getElementById("genti");
 
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else { 
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
-function showPosition(position) {
-	console.log("Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude);
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude;
-}
-</script>
 
 
   </head>
@@ -351,9 +333,9 @@ if($_SESSION['username']=="NoUserActive")
                   <div class="panel-body">
                       <div class="col-md-6 col-sm-12">
                         <h3 class="animated fadeInLeft">Customer Service</h3>
-						<button onclick="getLocation()">Merre lokacionin</button>
+			<!--			<button onclick="getLocation()">Merre lokacionin</button>
 						
-                        <p  id="Location">Lokacioni</p>
+                        <p  id="Location">Lokacioni</p> -->
 
                         <ul class="nav navbar-nav">
                             <li><a href="" >Impedit</a></li>
@@ -365,7 +347,7 @@ if($_SESSION['username']=="NoUserActive")
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <div class="col-md-6 col-sm-6 text-right" id="Location1" style="padding-left:10px;">
-                          <h3 id="genti" style="color:#DDDDDE;"><span class="fa  fa-map-marker"></span> Banyumas</h3>
+                          <h3 id="genti" style="color:#DDDDDE;"><span class="fa  fa-map-marker"></span> Prishtina</h3>
                           <h1 style="margin-top: -10px;color: #ddd;">
                               <?php
                               $long="21.16688";
@@ -385,7 +367,7 @@ if($_SESSION['username']=="NoUserActive")
 
 
 
-                             //  echo $weather."   ".$tempC;
+
                                     if($weather=="Rain")
                                     {
                                         echo "<div class='stormy rainy animated pulse infinite'><div class='shadow'></div></div>";
@@ -443,6 +425,15 @@ if($_SESSION['username']=="NoUserActive")
                               </div>
                             </div>
                           ';
+
+                                    }
+                                    else if($weather=="Clear")
+                                    {
+                                        echo '<div class="suny">
+    <div class="sun animated pulse infinite">
+    </div>
+    
+</div>';
 
                                     }
 
