@@ -205,7 +205,7 @@
                     </li>
                     <li class="ripple">
                       <a class="tree-toggle nav-header">
-                        <span class="fa-diamond fa"></span> Layout
+                        <span class="fa-diamond fa"></span> Regjistro Nxënës
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
                       <ul class="nav nav-list tree">
@@ -215,7 +215,7 @@
                     </li>
                     <li class="ripple">
                       <a class="tree-toggle nav-header">
-                        <span class="fa-area-chart fa"></span> Charts
+                        <span class="fa-area-chart fa"></span> Shto Lëndë
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
                       <ul class="nav nav-list tree">
@@ -226,7 +226,7 @@
                       </ul>
                     </li>
                     <li class="ripple"><a class="tree-toggle nav-header">
-                    <span class="fa fa-pencil-square"></span> Ui Elements  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
+                    <span class="fa fa-pencil-square"></span>Shto Profesor-Lëndë<span class="fa-angle-right fa right-arrow text-right"></span> </a>
                       <ul class="nav nav-list tree">
                         <li><a href="color.html">Color</a></li>
                         <li><a href="weather.html">Weather</a></li>
@@ -243,7 +243,7 @@
                         <li><a href="modal.html">Modals</a></li>
                       </ul>
                     </li>
-                    <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-check-square-o"></span> Forms  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
+                    <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-check-square-o"></span> Noto Nxënës  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                       <ul class="nav nav-list tree">
                         <li><a href="formelement.html">Form Element</a></li>
                         <li><a href="#">Wizard</a></li>
