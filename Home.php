@@ -888,8 +888,12 @@ if($_SESSION['username']=="NoUserActive")
                             </div>
                         </div>
                     </div>
-                    <div class="chat-input">
-                        <textarea placeholder="type your message here.."></textarea>
+                    <div id="chat-input" class="chat-input">
+                        <form class="form-inline" id="messageForm">
+<!--                            <input id="nameInput" type="text" class="input-medium" placeholder="Name" />-->
+                            <input id="messageInput" type="text" class="input-xxlarge" placeHolder="Message" />
+                            <input type="submit" value="Send" />
+                        </form>
                     </div>
                     <div class="user-list">
                         <ul>
@@ -1298,6 +1302,10 @@ if($_SESSION['username']=="NoUserActive")
 <script src="asset/js/plugins/maps/jquery.vmap.world.js"></script>
 <script src="asset/js/plugins/jquery.vmap.sampledata.js"></script>
 <script src="asset/js/plugins/chart.min.js"></script>
+
+<!-- chat -->
+<script src="asset/js/node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.js"></script>
+<script src="asset/js/nodeClient.js"></script>
 
 
 <!-- custom -->
