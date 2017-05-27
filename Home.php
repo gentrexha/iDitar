@@ -7,7 +7,7 @@
 	<meta name="author" content="Isna Nur Azis">
 	<meta name="keyword" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Miminium</title>
+    <title>iDitari</title>
  
     <!-- start: Css -->
     <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
@@ -127,7 +127,27 @@
                 chart.draw(data, options);
             }
         }
+		
     </script>
+	
+	
+	<script type="text/javascript">
+var x = document.getElementById("genti");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+	console.log("Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude);
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
 
 
   </head>
@@ -191,7 +211,16 @@ if($_SESSION['username']=="NoUserActive")
                       <ul>
                         <li><a href=""><span class="fa fa-cogs"></span></a></li>
                         <li><a href=""><span class="fa fa-lock"></span></a></li>
+<<<<<<< HEAD
                         <li><a href="logout.php"><span class="fa fa-power-off "></span></a></li>
+=======
+                        <li><a href="login.php"><span class="fa fa-power-off ">
+                          <!-- Log out config  -->
+                          <?php 
+
+                          ?>
+                        </span></a></li>
+>>>>>>> 2f31d5a49d6e424c004b835747ab542cd57af863
                       </ul>
                     </li>
                   </ul>
@@ -328,7 +357,9 @@ if($_SESSION['username']=="NoUserActive")
                   <div class="panel-body">
                       <div class="col-md-6 col-sm-12">
                         <h3 class="animated fadeInLeft">Customer Service</h3>
-                        <p class="animated fadeInDown"><span class="fa  fa-map-marker"></span> Batavia,Indonesia</p>
+						<button onclick="getLocation()">Merre lokacionin</button>
+						
+                        <p  id="Location">Lokacioni</p>
 
                         <ul class="nav navbar-nav">
                             <li><a href="" >Impedit</a></li>
@@ -339,8 +370,8 @@ if($_SESSION['username']=="NoUserActive")
                         </ul>
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <div class="col-md-6 col-sm-6 text-right" style="padding-left:10px;">
-                          <h3 style="color:#DDDDDE;"><span class="fa  fa-map-marker"></span> Banyumas</h3>
+                        <div class="col-md-6 col-sm-6 text-right" id="Location1" style="padding-left:10px;">
+                          <h3 id="genti" style="color:#DDDDDE;"><span class="fa  fa-map-marker"></span> Banyumas</h3>
                           <h1 style="margin-top: -10px;color: #ddd;">30<sup>o</sup></h1>
                         </div>
                         <div class="col-md-6 col-sm-6">
@@ -695,91 +726,7 @@ if($_SESSION['username']=="NoUserActive")
                       </div>
                       <div class="dot"></div>
                     </li>
-                    <li class="away">
-                      <img src="asset/img/avatar.jpg" alt="user name">
-                      <div class="name">
-                        <h5><b>Bill Gates</b></h5>
-                        <p>Hi there.?</p>
-                      </div>
-                      <div class="gadget">
-                        <span class="fa  fa-desktop"></span> 
-                      </div>
-                      <div class="dot"></div>
-                    </li>
-                    <li class="offline">
-                      <img src="asset/img/avatar.jpg" alt="user name">
-                      <div class="name">
-                        <h5><b>Bill Gates</b></h5>
-                        <p>Hi there.?</p>
-                      </div>
-                      <div class="dot"></div>
-                    </li>
-                    <li class="offline">
-                      <img src="asset/img/avatar.jpg" alt="user name">
-                      <div class="name">
-                        <h5><b>Bill Gates</b></h5>
-                        <p>Hi there.?</p>
-                      </div>
-                      <div class="dot"></div>
-                    </li>
-                    <li class="online">
-                      <img src="asset/img/avatar.jpg" alt="user name">
-                      <div class="name">
-                        <h5><b>Bill Gates</b></h5>
-                        <p>Hi there.?</p>
-                      </div>
-                      <div class="gadget">
-                        <span class="fa  fa-mobile-phone fa-2x"></span> 
-                      </div>
-                      <div class="dot"></div>
-                    </li>
-                    <li class="offline">
-                      <img src="asset/img/avatar.jpg" alt="user name">
-                      <div class="name">
-                        <h5><b>Bill Gates</b></h5>
-                        <p>Hi there.?</p>
-                      </div>
-                      <div class="dot"></div>
-                    </li>
-                    <li class="online">
-                      <img src="asset/img/avatar.jpg" alt="user name">
-                      <div class="name">
-                        <h5><b>Bill Gates</b></h5>
-                        <p>Hi there.?</p>
-                      </div>
-                      <div class="gadget">
-                        <span class="fa  fa-mobile-phone fa-2x"></span> 
-                      </div>
-                      <div class="dot"></div>
-                    </li>
-                    <li class="offline">
-                      <img src="asset/img/avatar.jpg" alt="user name">
-                      <div class="name">
-                        <h5><b>Bill Gates</b></h5>
-                        <p>Hi there.?</p>
-                      </div>
-                      <div class="dot"></div>
-                    </li>
-                    <li class="offline">
-                      <img src="asset/img/avatar.jpg" alt="user name">
-                      <div class="name">
-                        <h5><b>Bill Gates</b></h5>
-                        <p>Hi there.?</p>
-                      </div>
-                      <div class="dot"></div>
-                    </li>
-                    <li class="online">
-                      <img src="asset/img/avatar.jpg" alt="user name">
-                      <div class="name">
-                        <h5><b>Bill Gates</b></h5>
-                        <p>Hi there.?</p>
-                      </div>
-                      <div class="gadget">
-                        <span class="fa  fa-mobile-phone fa-2x"></span> 
-                      </div>
-                      <div class="dot"></div>
-                    </li>
-                    <li class="online">
+                    
                       <img src="asset/img/avatar.jpg" alt="user name">
                       <div class="name">
                         <h5><b>Bill Gates</b></h5>

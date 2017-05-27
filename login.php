@@ -7,7 +7,7 @@
   <meta name="author" content="Isna Nur Azis">
   <meta name="keyword" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Miminium</title>
+  <title>iDitari</title>
 
   <!-- start: Css -->
   <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
@@ -34,11 +34,12 @@
 
         <form class="form-signin" method="POST" action="login.php">
           <div class="panel periodic-login">
-              <span class="atomic-number">28</span>
+              <!-- <span class="atomic-number">28</span> -->
               <div class="panel-body text-center">
-                  <h1 class="atomic-symbol">Mi</h1>
-                  <p class="atomic-mass">14.072110</p>
-                  <p class="element-name">Miminium</p>
+
+                  <h1 class="atomic-symbol"><p><img src="asset/img/FrontPageLogo.png"  style="width:250px;height:200px;"></p></h1>
+                 <!--  <p class="atomic-mass">14.072110</p>
+                  <p class="element-name">Miminium</p> -->
 
                   <i class="icons icon-arrow-down"></i>
                   <div class="form-group form-animate-text" style="margin-top:40px !important;">
@@ -54,10 +55,10 @@
                   <label class="pull-left">
                   <input type="checkbox" class="icheck pull-left" name="remember" id="remember"/> Remember me
                   </label>
-                  <input type="submit" class="btn col-md-12" name="signin" id="signin" value="SignIn"/>
+                  <input type="submit" class="btn col-md-12" name="signin" id="signin" value="Kyçu"/>
               </div>
                 <div class="text-center" style="padding:5px;">
-                    <a href="reg.php"><u>Signup</u></a>
+                    <a href="reg.php"><u>Regjistrohu</u></a>
                 </div>
           </div>
         </form>
