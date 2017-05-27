@@ -131,7 +131,13 @@
 
 
   </head>
-<?php                         session_start();
+<?php
+session_start();
+if($_SESSION['username']=="NoUserActive")
+{
+ 
+    echo("<script>location.href = 'login.php';</script>");
+}
 ?>
  <body id="mimin" class="dashboard">
       <!-- start: Header -->
@@ -185,7 +191,7 @@
                       <ul>
                         <li><a href=""><span class="fa fa-cogs"></span></a></li>
                         <li><a href=""><span class="fa fa-lock"></span></a></li>
-                        <li><a href=""><span class="fa fa-power-off "></span></a></li>
+                        <li><a href="logout.php"><span class="fa fa-power-off "></span></a></li>
                       </ul>
                     </li>
                   </ul>
