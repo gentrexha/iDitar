@@ -366,11 +366,59 @@ if($_SESSION['username']=="NoUserActive")
                     <div class="col-md-6 col-sm-12">
                         <div class="col-md-6 col-sm-6 text-right" id="Location1" style="padding-left:10px;">
                           <h3 id="genti" style="color:#DDDDDE;"><span class="fa  fa-map-marker"></span> Banyumas</h3>
-                          <h1 style="margin-top: -10px;color: #ddd;">30<sup>o</sup></h1>
+                          <h1 style="margin-top: -10px;color: #ddd;">
+                              <?php
+                              $long="21.16688";
+                              $lat="42.672722";
+                              $jsonurl = "http://api.openweathermap.org/data/2.5/weather?lat=$lat&lon=$long&appid=fa99dba19045c5e44732f794badae6bc";
+                              $json = file_get_contents($jsonurl);
+                              $jsondata=json_decode($json);
+                              $weather =$jsondata->weather[0]->main;
+                              $temp=$jsondata->main->temp;
+                              $tempC=$temp -273.15;
+                              echo $tempC;
+                              ?><sup>o</sup></h1>
                         </div>
                         <div class="col-md-6 col-sm-6">
                            <div class="wheather">
-                            <div class="stormy rainy animated pulse infinite">
+                               <?php
+
+
+
+                             //  echo $weather."   ".$tempC;
+                                    if($weather=="Rain")
+                                    {
+                                        echo "<div class='stormy rainy animated pulse infinite'><div class='shadow'></div></div>";
+
+                                    }
+                                    else if($weather=="Clouds")
+                                    {
+                                        echo "<div class='cloudy animated pulse infinite'><div class='shadow'></div></div>";
+
+                                    }
+                                    else if($weather=="Snow")
+                                    {
+                                        echo '  <div class="snowy rainy animated pulse infinite">
+                                <div class="shadow">
+                                  
+                                </div>
+                            </div>
+                            <div class="sub-wheather snowy-sub-wheather">
+                              <div class="rain">
+                                  <div class="droplet droplet1"></div>
+                                  <div class="droplet droplet2"></div>
+                                  <div class="droplet droplet3"></div>
+                                  <div class="droplet droplet4"></div>
+                                  <div class="droplet droplet5"></div>
+                                  <div class="droplet droplet6"></div>
+                                </div>
+                            </div>
+                          ';
+
+                                    }
+                                    else if($weather=="Extreme")
+                                    {
+                                        echo '  <div class="stormy rainy animated pulse infinite">
                               <div class="shadow">
                                 
                               </div>
@@ -387,7 +435,34 @@ if($_SESSION['username']=="NoUserActive")
                                   <div class="droplet droplet5"></div>
                                   <div class="droplet droplet6"></div>
                                 </div>
+                              <div class="tornado">
+                                  <div class="wind wind1"></div>
+                                  <div class="wind wind2"></div>
+                                  <div class="wind wind3"></div>
+                                  <div class="wind wind4"></div>
+                              </div>
                             </div>
+                          ';
+
+                                    }
+
+
+                               ?>
+
+                               <!--     <div class="cloudy animated pulse infinite"><div class="shadow"></div></div>
+                                 <div class="sub-wheather">
+                                   <div class="thunder">
+
+                                   </div>
+                                   <div class="rain">
+                                       <div class="droplet droplet1"></div>
+                                       <div class="droplet droplet2"></div>
+                                       <div class="droplet droplet3"></div>
+                                       <div class="droplet droplet4"></div>
+                                       <div class="droplet droplet5"></div>
+                                       <div class="droplet droplet6"></div>
+                                     </div>
+                                 </div>  -->
                           </div>
                         </div>                   
                     </div>
