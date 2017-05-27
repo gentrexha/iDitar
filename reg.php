@@ -7,7 +7,7 @@
   <meta name="author" content="Isna Nur Azis">
   <meta name="keyword" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Miminium</title>
+  <title>iDitari</title>
 
   <!-- start: Css -->
   <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
@@ -34,11 +34,12 @@
 
         <form class="form-signin" method="POST" action="reg.php">
           <div class="panel periodic-login">
-              <span class="atomic-number">28</span>
+              <!-- <span class="atomic-number">28</span> -->
               <div class="panel-body text-center">
-                  <h1 class="atomic-symbol">Mi</h1>
-                  <p class="atomic-mass">14.072110</p>
-                  <p class="element-name">Miminium</p>
+              <h1 class="atomic-symbol"><p><img src="asset/img/FrontPageLogo.png"  style="width:250px;height:200px;"></p></h1>
+                  <!-- <h1 class="atomic-symbol">Mi</h1> -->
+                  <p class="atomic-mass">Jepni te dhënat tuaja</p>
+                  <!-- <p class="element-name">Miminium</p> -->
 
                   <i class="icons icon-arrow-down"></i>
                   <div class="form-group form-animate-text" style="margin-top:40px !important;">
@@ -66,7 +67,7 @@
                     <span class="bar"></span>
                     <label>Password</label>
                   </div>
-                  <input type="submit" class="btn col-md-12" name="signup" id="signup" value="SignUp"/>
+                  <input type="submit" class="btn col-md-12" name="SignUp" id="signup" value="Regjistrohu"/>
               </div>
                 <div class="text-center" style="padding:5px;">
                     <a href="login.php">Already have an account?</a>

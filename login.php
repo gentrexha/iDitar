@@ -7,7 +7,7 @@
   <meta name="author" content="Isna Nur Azis">
   <meta name="keyword" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Miminium</title>
+  <title>iDitari</title>
 
   <!-- start: Css -->
   <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
@@ -55,10 +55,10 @@
                   <label class="pull-left">
                   <input type="checkbox" class="icheck pull-left" name="remember" id="remember"/> Remember me
                   </label>
-                  <input type="submit" class="btn col-md-12" name="signin" id="signin" value="SignIn"/>
+                  <input type="submit" class="btn col-md-12" name="signin" id="signin" value="Kyçu"/>
               </div>
                 <div class="text-center" style="padding:5px;">
-                    <a href="reg.php"><u>Signup</u></a>
+                    <a href="reg.php"><u>Regjistrohu</u></a>
                 </div>
           </div>
         </form>
