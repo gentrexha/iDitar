@@ -211,16 +211,10 @@ if($_SESSION['username']=="NoUserActive")
                       <ul>
                         <li><a href=""><span class="fa fa-cogs"></span></a></li>
                         <li><a href=""><span class="fa fa-lock"></span></a></li>
-<<<<<<< HEAD
                         <li><a href="logout.php"><span class="fa fa-power-off "></span></a></li>
-=======
-                        <li><a href="login.php"><span class="fa fa-power-off ">
-                          <!-- Log out config  -->
-                          <?php 
 
-                          ?>
+
                         </span></a></li>
->>>>>>> 2f31d5a49d6e424c004b835747ab542cd57af863
                       </ul>
                     </li>
                   </ul>
