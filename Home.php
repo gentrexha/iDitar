@@ -716,21 +716,21 @@ if($_SESSION['username']=="NoUserActive")
                         <p>Hi there.?</p>
                       </div>
                       <div class="gadget">
-                        <span class="fa  fa-mobile-phone fa-2x"></span> 
+                        <span class="fa  fa-mobile-phone fa-2x"></span>
                       </div>
                       <div class="dot"></div>
                     </li>
                     
-                      <img src="asset/img/avatar.jpg" alt="user name">
-                      <div class="name">
-                        <h5><b>Bill Gates</b></h5>
-                        <p>Hi there.?</p>
-                      </div>
-                      <div class="gadget">
-                        <span class="fa  fa-mobile-phone fa-2x"></span> 
-                      </div>
-                      <div class="dot"></div>
-                    </li>
+<!--                      <img src="asset/img/avatar.jpg" alt="user name">-->
+<!--                      <div class="name">-->
+<!--                        <h5><b>Bill Gates</b></h5>-->
+<!--                        <p>Hi there.?</p>-->
+<!--                      </div>-->
+<!--                      <div class="gadget">-->
+<!--                        <span class="fa  fa-mobile-phone fa-2x"></span> -->
+<!--                      </div>-->
+<!--                      <div class="dot"></div>-->
+<!--                    </li>-->
 
                   </ul>
                 </div>
