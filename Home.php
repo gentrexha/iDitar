@@ -131,7 +131,8 @@
 
 
   </head>
-
+<?php                         session_start();
+?>
  <body id="mimin" class="dashboard">
       <!-- start: Header -->
         <nav class="navbar navbar-default header navbar-fixed-top">
@@ -160,7 +161,20 @@
               </ul>
 
               <ul class="nav navbar-nav navbar-right user-nav">
-                <li class="user-name"><span>Akihiko Avaron</span></li>
+                <li class="user-name"><span>
+                        <?php
+                        require 'connection.php';
+                        $uid=$_SESSION['username'];
+                        $querySignUp = "select concat(emri,' ',mbiemri) emrimbiemri from users where user='$uid'";
+                        $dbReplygetName = mysqli_query($dbConn, $querySignUp);
+                        while($row=mysqli_fetch_assoc($dbReplygetName))
+                            echo $row["emrimbiemri"];
+
+
+
+                        ?>
+
+                    </span></li>
                   <li class="dropdown avatar-dropdown">
                    <img src="asset/img/avatar.jpg" class="img-circle avatar" alt="user name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"/>
                    <ul class="dropdown-menu user-dropdown">
