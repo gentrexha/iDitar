@@ -18,20 +18,16 @@
     <link rel="stylesheet" type="text/css" href="asset/css/plugins/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="asset/css/plugins/icheck/skins/flat/aero.css"/>
     <link href="asset/css/style.css" rel="stylesheet">
+	
+
+  <!-- plugins -->
+  <link rel="stylesheet" type="text/css" href="asset/css/plugins/select2.min.css"/>
+  <!-- end: Css -->
+
     <!-- end: Css -->
 
     <link rel="shortcut icon" href="asset/img/logomi.png">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <script type="text/javascript">
-        $(".select2-A").select2({
-            placeholder: "Select a state",
-            allowClear: true
-        });
-    </script>
-    <![endif]-->
+    
 </head>
 
 <body id="mimin" class="dashboard form-signin-wrapper">
@@ -48,20 +44,25 @@
 
                 <i class="icons icon-arrow-down"></i>
                 <div class="form-group form-animate-text" style="margin-top:40px !important;">
+				  <div id="noui-slider"></div>
+				      <div class="form-group">
+					  
                     <?php
 
                     require 'connection.php';
                     $sqlQuery = "select concat(emri,' ',mbiemri) emri,sid from studentet";
                     $dbResponse = mysqli_query($dbConn , $sqlQuery);
 
-                    echo "<select type='text' class='form-text' name='sid' id='sid' >";
-                    echo "<option value='NULL' style='display:none'><span class='bar'></span><label>Emri & Mbiemri</label></option>";
+                    echo "<select type='text' style='color:blue' class='form-text select2-A'  name='sid' id='sid' required>";
+                    //echo "<option value='NULL' style='display:none'><span class='bar'></span><label>Emri & Mbiemri</label></option>";
                     while($row = mysqli_fetch_assoc($dbResponse)) {
                         echo "<option style='color:black' value='".$row["sid"]."'>".$row["emri"]."</option>";
                     }
                     echo "</select>"
                     ?>
-
+				
+					<span class="bar"></span>
+                            <label style="margin-top:-15px">Studenti</label>
                 </div>
                 <div class="form-group form-animate-text" style="margin-top:40px !important;">
                     <?php
@@ -70,17 +71,19 @@
                     $sqlQuery = "select emri,lid from lendet";
                     $dbResponse = mysqli_query($dbConn , $sqlQuery);
 
-                    echo "<select type='text' class='form-text' name='lid' id='lid' >";
-                    echo "<option value='NULL' style='display:none'><span class='bar'></span><label>Lënda</label></option>";
+                    echo "<select type='text' class='form-text' name='lid' id='lid' required>";
+                    echo "<option value='' style='display:none'><span class='bar'></span><label>Lënda</label></option>";
                     while($row = mysqli_fetch_assoc($dbResponse)) {
                         echo "<option style='color:black' value='".$row["lid"]."'>".$row["emri"]."</option>";
                     }
                     echo "</select>"
                     ?>
+					 <center><div type="text" id="noui-range" style="height:4;"></div>
+                        </center>
 
                 </div><div class="form-group form-animate-text" style="margin-top:40px !important;">
-                    <select type="text" class="form-text" name="nota" id="nota" >
-                        <option value="NULL" style="display:none">
+                    <select type="text" class="form-text" name="nota" id="nota" required>
+                        <option value="" style="display:none">
                             <span class="bar"></span>
                             <label>Nota</label>
                         </option>
@@ -124,7 +127,37 @@
 <!-- end: Javascript -->
 </body>
 </html>
+<script src="asset/js/jquery.min.js"></script>
+<script src="asset/js/jquery.ui.min.js"></script>
+<script src="asset/js/bootstrap.min.js"></script>
 
+
+<!-- plugins -->
+<script src="asset/js/plugins/moment.min.js"></script>
+<script src="asset/js/plugins/jquery.knob.js"></script>
+<script src="asset/js/plugins/ion.rangeSlider.min.js"></script>
+<script src="asset/js/plugins/bootstrap-material-datetimepicker.js"></script>
+<script src="asset/js/plugins/jquery.nicescroll.js"></script>
+<script src="asset/js/plugins/jquery.mask.min.js"></script>
+<script src="asset/js/plugins/select2.full.min.js"></script>
+<script src="asset/js/plugins/nouislider.min.js"></script>
+<script src="asset/js/plugins/jquery.validate.min.js"></script>
+
+
+<!-- custom -->
+<script src="asset/js/main.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+
+
+    $(".select2-A").select2({
+      placeholder: "Zgjedh nje Nxënës",
+      allowClear: true
+    });
+
+    
+  });
+</script>
 <?php
 
 session_start();
