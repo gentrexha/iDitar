@@ -169,8 +169,9 @@ if($_SESSION['username']=="NoUserActive")
                 <span class="middle"></span>
                 <span class="bottom"></span>
               </div>
-                <a href="index.html" class="navbar-brand"> 
-                 <b>MIMIN</b>
+                <a href="Home.php" class="navbar-brand"> 
+                 <b >iDitari</b>
+               
                 </a>
 
               <ul class="nav navbar-nav search-nav">
@@ -248,12 +249,12 @@ if($_SESSION['username']=="NoUserActive")
                     </li>
                     <li class="ripple">
                       <a class="tree-toggle nav-header">
-                        <span class="fa-diamond fa"></span> Regjistro Nxënës
+                        <span class="fa-diamond fa"></span> Regjistro
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
-                      <ul class="nav nav-list tree">
-                        <li><a href="topnav.html">Top Navigation</a></li>
-                        <li><a href="boxed.html">Boxed</a></li>
+                       <ul class="nav nav-list tree">
+                        <li><a href="InsertNxensit.php">Regjistro Nxenesin</a></li>
+                       <!--  <li><a href="boxed.html">Boxed</a></li> -->
                       </ul>
                     </li>
                     <li class="ripple">
@@ -654,7 +655,7 @@ if($_SESSION['username']=="NoUserActive")
                         </div>
                     </div>
                     </div>
-                    <div class="col-md-12">
+                    <!-- <div class="col-md-12">
                         <div class="panel bg-green text-white">
                             <div class="panel-body">
                               <div class="col-md-8 col-sm-8 col-xs-12">
@@ -676,7 +677,7 @@ if($_SESSION['username']=="NoUserActive")
                               </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
       		  </div>
           <!-- end: content -->
@@ -691,14 +692,14 @@ if($_SESSION['username']=="NoUserActive")
                  </a>
                 </li>
                 <li>
-                 <a data-toggle="tab" href="#right-menu-notif">
+                 <!-- <a data-toggle="tab" href="#right-menu-notif">
                   <span class="fa fa-bell-o fa-2x"></span>
-                 </a>
+                 </a> -->
                 </li>
                 <li>
-                  <a data-toggle="tab" href="#right-menu-config">
+                  <!-- <a data-toggle="tab" href="#right-menu-config">
                    <span class="fa fa-cog fa-2x"></span>
-                  </a>
+                  </a> -->
                  </li>
               </ul>
 
