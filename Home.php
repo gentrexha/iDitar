@@ -150,18 +150,10 @@ if($_SESSION['username']=="NoUserActive")
                 <span class="top"></span>
                 <span class="middle"></span>
                 <span class="bottom"></span>
-<<<<<<< HEAD
-              </div>
-                <a href="Home.php" class="navbar-brand"> 
-                 <b >iDitari</b>
-               
-                </a>
-=======
             </div>
             <a href="index.html" class="navbar-brand">
                 <b>MIMIN</b>
             </a>
->>>>>>> origin/master
 
             <ul class="nav navbar-nav search-nav">
                 <li>
@@ -230,26 +222,6 @@ if($_SESSION['username']=="NoUserActive")
                 <li class="active ripple">
                     <a class="tree-toggle nav-header"><span class="fa-home fa"></span> Dashboard
                         <span class="fa-angle-right fa right-arrow text-right"></span>
-<<<<<<< HEAD
-                      </a>
-                      <ul class="nav nav-list tree">
-                          <li><a href="dashboard-v1.html">Dashboard v.1</a></li>
-                          <li><a href="dashboard-v2.html">Dashboard v.2</a></li>
-                      </ul>
-                    </li>
-                    <li class="ripple">
-                      <a class="tree-toggle nav-header">
-                        <span class="fa-diamond fa"></span> Regjistro
-                        <span class="fa-angle-right fa right-arrow text-right"></span>
-                      </a>
-                       <ul class="nav nav-list tree">
-                        <li><a href="InsertNxensit.php">Regjistro Nxenesin</a></li>
-                       <!--  <li><a href="boxed.html">Boxed</a></li> -->
-                      </ul>
-                    </li>
-                    <li class="ripple">
-                      <a class="tree-toggle nav-header">
-=======
                     </a>
                     <ul class="nav nav-list tree">
                         <li><a href="dashboard-v1.html">Dashboard v.1</a></li>
@@ -268,7 +240,6 @@ if($_SESSION['username']=="NoUserActive")
                 </li>
                 <li class="ripple">
                     <a class="tree-toggle nav-header">
->>>>>>> origin/master
                         <span class="fa-area-chart fa"></span> Shto Lëndë
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                     </a>
@@ -747,14 +718,6 @@ if($_SESSION['username']=="NoUserActive")
                             </div>
                         </div>
                     </div>
-<<<<<<< HEAD
-                    </div>
-                    <!-- <div class="col-md-12">
-                        <div class="panel bg-green text-white">
-                            <div class="panel-body">
-                              <div class="col-md-8 col-sm-8 col-xs-12">
-                                <div class="maps" style="height:300px;">
-=======
                 </div>
             </div>
             <div class="col-md-12">
@@ -774,70 +737,16 @@ if($_SESSION['username']=="NoUserActive")
                                 <div class="col-md-6 col-sm-12 col-xs-12">
                                     <h1>12.000</h1>
                                     <p>Active</p>
->>>>>>> origin/master
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- end: content -->
 
-<<<<<<< HEAD
-    
-          <!-- start: right menu -->
-            <div id="right-menu">
-              <ul class="nav nav-tabs">
-                <li class="active">
-                 <a data-toggle="tab" href="#right-menu-user">
-                  <span class="fa fa-comment-o fa-2x"></span>
-                 </a>
-                </li>
-                <li>
-                 <!-- <a data-toggle="tab" href="#right-menu-notif">
-                  <span class="fa fa-bell-o fa-2x"></span>
-                 </a> -->
-                </li>
-                <li>
-                  <!-- <a data-toggle="tab" href="#right-menu-config">
-                   <span class="fa fa-cog fa-2x"></span>
-                  </a> -->
-                 </li>
-              </ul>
-
-              <div class="tab-content">
-                <div id="right-menu-user" class="tab-pane fade in active">
-                  <div class="search col-md-12">
-                    <input type="text" placeholder="search.."/>
-                  </div>
-                  <div class="user col-md-12">
-                   <ul class="nav nav-list">
-                    <li class="online">
-                      <img src="asset/img/avatar.jpg" alt="user name">
-                      <div class="name">
-                        <h5><b>Bill Gates</b></h5>
-                        <p>Hi there.?</p>
-                      </div>
-                      <div class="gadget">
-                        <span class="fa  fa-mobile-phone fa-2x"></span> 
-                      </div>
-                      <div class="dot"></div>
-                    </li>
-                    
-                      <img src="asset/img/avatar.jpg" alt="user name">
-                      <div class="name">
-                        <h5><b>Bill Gates</b></h5>
-                        <p>Hi there.?</p>
-                      </div>
-                      <div class="gadget">
-                        <span class="fa  fa-mobile-phone fa-2x"></span> 
-                      </div>
-                      <div class="dot"></div>
-                    </li>
-=======
->>>>>>> origin/master
 
     <!-- start: right menu -->
     <div id="right-menu">
