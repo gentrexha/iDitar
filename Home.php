@@ -895,6 +895,7 @@ if($_SESSION['username']=="NoUserActive")
                             <input id="messageInput" type="text" class="input-xxlarge" placeHolder="Type here..." />
                             <input type="submit" value="Send" />
                         </form>
+                        <form id="videoChatForm"><input type="submit" value="Start chat!"/></form>
                     </div>
                     <div class="user-list">
                         <ul>
