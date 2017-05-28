@@ -151,8 +151,8 @@ if($_SESSION['username']=="NoUserActive")
                 <span class="middle"></span>
                 <span class="bottom"></span>
             </div>
-            <a href="index.html" class="navbar-brand">
-                <b>MIMIN</b>
+            <a href="Home.php" class="navbar-brand">
+                <b>iDitari</b>
             </a>
 
             <ul class="nav navbar-nav search-nav">
@@ -220,37 +220,38 @@ if($_SESSION['username']=="NoUserActive")
                     <p class="animated fadeInRight">Sat,October 1st 2029</p>
                 </li>
                 <li class="active ripple">
-                    <a class="tree-toggle nav-header"><span class="fa-home fa"></span> Dashboard
+                    <a class="tree-toggle nav-header"><span class="fa-book fa"></span> Notimi
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                     </a>
                     <ul class="nav nav-list tree">
-                        <li><a href="dashboard-v1.html">Dashboard v.1</a></li>
-                        <li><a href="dashboard-v2.html">Dashboard v.2</a></li>
+                        <li onclick="location.href='NotoNxenesit.php';"><a href="NotoNxenesit.php">Noto Nxenesit</a></li>
+                        <!-- <li><a href="dashboard-v2.html">Dashboard v.2</a></li> -->
                     </ul>
                 </li>
                 <li class="ripple">
                     <a class="tree-toggle nav-header">
-                        <span class="fa-diamond fa"></span> Regjistro Nxënës
+                        <span class="fa-pencil fa"></span> Regjistrimi
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                     </a>
                     <ul class="nav nav-list tree">
-                        <li><a href="topnav.html">Top Navigation</a></li>
-                        <li><a href="boxed.html">Boxed</a></li>
+                        <li onclick="location.href='ShtoLende.php';"><a href="ShtoLende.php">Regjistro Lenden</a></li>
+                        <li onclick="location.href='ShtoProfNeLende.php';"><a href="ShtoProfNeLende.php">Regjistro Prof ne lende</a></li>
                     </ul>
                 </li>
                 <li class="ripple">
                     <a class="tree-toggle nav-header">
-                        <span class="fa-area-chart fa"></span> Shto Lëndë
+                        <span class="fa-child fa"></span> Nxenesit
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                     </a>
                     <ul class="nav nav-list tree">
-                        <li><a href="chartjs.html">ChartJs</a></li>
-                        <li><a href="morris.html">Morris</a></li>
+                        <li onclick="location.href='InsertNxensit.php';"><a href="InsertNxensit.php">Shto Nxenesin</a></li>
+                        <!-- <li><a href="morris.html">Morris</a></li>
                         <li><a href="flot.html">Flot</a></li>
-                        <li><a href="sparkline.html">SparkLine</a></li>
+                        <li><a href="sparkline.html">SparkLine</a></li> -->
                     </ul>
                 </li>
-                <li class="ripple"><a class="tree-toggle nav-header">
+                <!-- pjesa pas shto nxenesin ne menyne djathtas per momentin po e lojm koment -->
+                <!-- <li class="ripple"><a class="tree-toggle nav-header">
                         <span class="fa fa-pencil-square"></span>Shto Profesor-Lëndë<span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     <ul class="nav nav-list tree">
                         <li><a href="color.html">Color</a></li>
@@ -267,23 +268,23 @@ if($_SESSION['username']=="NoUserActive")
                         <li><a href="timeline.html">Timeline</a></li>
                         <li><a href="modal.html">Modals</a></li>
                     </ul>
-                </li>
-                <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-check-square-o"></span> Noto Nxënës  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
+                </li> -->
+               <!--  <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-check-square-o"></span> Noto Nxënës  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     <ul class="nav nav-list tree">
                         <li><a href="formelement.html">Form Element</a></li>
                         <li><a href="#">Wizard</a></li>
                         <li><a href="#">File Upload</a></li>
                         <li><a href="#">Text Editor</a></li>
                     </ul>
-                </li>
-                <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-table"></span> Tables  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
+                </li> -->
+               <!--  <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-table"></span> Tables  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     <ul class="nav nav-list tree">
                         <li><a href="datatables.html">Data Tables</a></li>
                         <li><a href="handsontable.html">handsontable</a></li>
                         <li><a href="tablestatic.html">Static</a></li>
                     </ul>
-                </li>
-                <li class="ripple"><a href="calendar.html"><span class="fa fa-calendar-o"></span>Calendar</a></li>
+                </li> -->
+                <!-- <li class="ripple"><a href="calendar.html"><span class="fa fa-calendar-o"></span>Calendar</a></li>
                 <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-envelope-o"></span> Mail <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     <ul class="nav nav-list tree">
                         <li><a href="mail-box.html">Inbox</a></li>
@@ -302,8 +303,8 @@ if($_SESSION['username']=="NoUserActive")
                         <li><a href="profile-v1.html">Profile v1</a></li>
                         <li><a href="invoice-v1.html">Invoice v1</a></li>
                     </ul>
-                </li>
-                <li class="ripple"><a class="tree-toggle nav-header"><span class="fa "></span> MultiLevel  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
+                </li> -->
+                <!-- <li class="ripple"><a class="tree-toggle nav-header"><span class="fa "></span> MultiLevel  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     <ul class="nav nav-list tree">
                         <li><a href="view-mail.html">Level 1</a></li>
                         <li><a href="view-mail.html">Level 1</a></li>
@@ -319,8 +320,8 @@ if($_SESSION['username']=="NoUserActive")
                             </ul>
                         </li>
                     </ul>
-                </li>
-                <li><a href="credits.html">Credits</a></li>
+                </li> -->
+                <!-- <li><a href="credits.html">Credits</a></li> -->
             </ul>
         </div>
     </div>
@@ -528,22 +529,52 @@ if($_SESSION['username']=="NoUserActive")
                                 <img src="asset/img/bg2.jpg" class="box-v2-cover img-responsive"/>
                                 <div class="box-v2-detail">
                                     <img src="asset/img/avatar.jpg" class="img-responsive"/>
-                                    <h4>Akihiko Avaron</h4>
+                                   <span>
+                        <?php
+                        require 'connection.php';
+                        $uid=$_SESSION['username'];
+                        $querySignUp = "select concat(emri,' ',mbiemri) emrimbiemri from users where user='$uid'";
+                        $dbReplygetName = mysqli_query($dbConn, $querySignUp);
+                        while($row=mysqli_fetch_assoc($dbReplygetName))
+                            echo $row["emrimbiemri"];
+
+
+
+                        ?></span>
                                 </div>
                             </div>
                             <div class="panel-body">
                                 <div class="col-md-12 padding-0 text-center">
                                     <div class="col-md-4 col-sm-4 col-xs-6 padding-0">
-                                        <h3>2.000</h3>
-                                        <p>Post</p>
+                                        <h3><span>
+                                            <?php
+                                            require 'connection.php';
+                                            $query="select count(*) nrlendet from lendet";
+                                            $dbReplaygetStudentet=mysqli_query($dbConn,$query);
+                                            while ($row=mysqli_fetch_assoc($dbReplaygetStudentet))
+                                                 echo $row["nrlendet"];
+                                             
+                                             ?>
+                                        </span></h3>
+                                        <p>Lende</p>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-xs-6 padding-0">
-                                        <h3>2.232</h3>
-                                        <p>share</p>
+                                        <h3>
+                                        <span>
+                                            <?php
+                                            require 'connection.php';
+                                            $query="select count(*) numri from studentet";
+                                            $dbReplaygetStudentet=mysqli_query($dbConn,$query);
+                                            while ($row=mysqli_fetch_assoc($dbReplaygetStudentet))
+                                                 echo $row["numri"];
+                                             
+                                             ?>
+                                        </span></h3>
+                                        <p>Nxenes</p>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-xs-12 padding-0">
-                                        <h3>4.320</h3>
-                                        <p>photos</p>
+                                       <!--  <h3>4.320</h3>
+                                        <p>photos</p> -->
                                     </div>
                                 </div>
                             </div>
