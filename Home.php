@@ -808,6 +808,7 @@ if($_SESSION['username']=="NoUserActive")
                     <div class="chat-area">
                         <div class="chat-area-content">
                             <div class="msg_container_base">
+                                <ul id="messages"></ul>
 <!--                                <div class="row msg_container send">-->
 <!--                                    <div class="col-md-9 col-xs-9 bubble">-->
 <!--                                        <div class="messages msg_sent">-->
@@ -891,7 +892,7 @@ if($_SESSION['username']=="NoUserActive")
                     <div id="chat-input" class="chat-input">
                         <form class="form-inline" id="messageForm">
 <!--                            <input id="nameInput" type="text" class="input-medium" placeholder="Name" />-->
-                            <input id="messageInput" type="text" class="input-xxlarge" placeHolder="Message" />
+                            <input id="messageInput" type="text" class="input-xxlarge" placeHolder="Type here..." />
                             <input type="submit" value="Send" />
                         </form>
                     </div>
