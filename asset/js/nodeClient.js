@@ -1,4 +1,4 @@
-var socket = io.connect( 'http://localhost:8080' );
+var socket = io.connect( 'http://172.16.1.165:8080' );
 var text;
 $( "#messageForm" ).submit( function() {
 	var nameVal = $( "#nameInput" ).val();
