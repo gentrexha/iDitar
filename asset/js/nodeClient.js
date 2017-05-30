@@ -35,7 +35,7 @@ $( "#videoChatForm" ).submit( function() {
     const roomHash = newHash.substring(1);
 
     var nameVal = $( "#nameInput" ).val();
-    var msg = 'camera.html#'+roomHash;
+    var msg = 'videochat.html#'+roomHash;
     console.log(msg);
     // $( "#messageInput" ).val("");
 
